@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1085149463865",
+    "project_id": "projek-qui",
+    "storage_bucket": "projek-qui.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085149463865:android:a59986f7d2ba68d4e254e8",
+        "android_client_info": {
+          "package_name": "com.example.projectpts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085149463865-1vlblc8a9fr6jqctutp8aq5uphjal463.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectpts",
+            "certificate_hash": "775d79f6572034b6926f482d3667050c3256b6c5"
+          }
+        },
+        {
+          "client_id": "1085149463865-84q5p4rjg4utefjdf8t1gsna7oj6ig05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb1qIyQzR99hbPupKpfSgrm3QJdg9z5Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085149463865-84q5p4rjg4utefjdf8t1gsna7oj6ig05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

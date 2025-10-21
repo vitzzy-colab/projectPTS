@@ -1,0 +1,27 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_10">
+
+    <LinearLayout
+        android:id="@+id/materiContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/txtChoseMateri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chose Materi"
+            android:textColor="#ffffff"
+            android:layout_marginTop="40dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:fontFamily="@font/pixelifysans"/>
+
+        <!-- Tombol materi bakal ditambahkan via Java -->
+    </LinearLayout>
+</ScrollView>

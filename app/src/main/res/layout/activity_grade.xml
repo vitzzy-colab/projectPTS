@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GradeActivity"
+    android:background="@drawable/background_4">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/txtchoseschool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chose Your \n School And Grade"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:fontFamily="@font/pixelifysans"
+            android:layout_marginBottom="50dp"/>
+
+        <!-- Elementary -->
+        <TextView
+            android:id="@+id/btnElementary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/btn_transparant_hitam"
+            android:fontFamily="@font/pixelifysans"
+            android:text="Elementary School"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/gradeElementaryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="30dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnGrade4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_transparant_hitam"
+                android:fontFamily="@font/pixelifysans"
+                android:text="Grade 4"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/btnGrade5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_transparant_hitam"
+                android:fontFamily="@font/pixelifysans"
+                android:text="Grade 5"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/btnGrade6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_transparant_hitam"
+                android:fontFamily="@font/pixelifysans"
+                android:text="Grade 6"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <!-- Junior -->
+        <TextView
+            android:id="@+id/btnJunior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_transparant_hitam"
+            android:fontFamily="@font/pixelifysans"
+            android:text="Junior High School"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/gradeJuniorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="30dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnGrade7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_transparant_hitam"
+                android:fontFamily="@font/pixelifysans"
+                android:text="Grade 7"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/btnGrade8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_transparant_hitam"
+                android:fontFamily="@font/pixelifysans"
+                android:text="Grade 8"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/btnGrade9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_transparant_hitam"
+                android:fontFamily="@font/pixelifysans"
+                android:text="Grade 9"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <!-- Senior -->
+        <TextView
+            android:id="@+id/btnSenior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_transparant_hitam"
+            android:fontFamily="@font/pixelifysans"
+            android:text="Senior High School"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/gradeSeniorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="30dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnGrade10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_transparant_hitam"
+                android:fontFamily="@font/pixelifysans"
+                android:text="Grade 10"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/btnGrade11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_transparant_hitam"
+                android:fontFamily="@font/pixelifysans"
+                android:text="Grade 11"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/btnGrade12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_transparant_hitam"
+                android:fontFamily="@font/pixelifysans"
+                android:text="Grade 12"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,26 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_10">
+
+    <LinearLayout
+        android:id="@+id/mapelContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/txtChoseMapel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Mapel"
+            android:textColor="#ffffff"
+            android:layout_marginTop="40dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:fontFamily="@font/pixelifysans"/>
+
+        <!-- Mapel akan ditambahkan via Java -->
+    </LinearLayout>
+</ScrollView>

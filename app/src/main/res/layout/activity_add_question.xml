@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollAddQuestion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background_5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/layoutAddQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 Tambah Soal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Pilihan Kelas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Kelas:"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/spGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnAddGrade"
+            android:text="+ Tambah Kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Pilihan Mapel -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Mapel:"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/spMapel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnAddMapel"
+            android:text="+ Tambah Mapel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Pilihan Materi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Materi:"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/spMateri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnAddMateri"
+            android:text="+ Tambah Materi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Pilihan Level -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Level:"
+            android:textColor="@android:color/white" />
+        <Spinner
+            android:id="@+id/spLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnAddLevel"
+            android:text="+ Tambah Level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Input Soal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pertanyaan:"
+            android:textColor="@android:color/white" />
+        <EditText
+            android:id="@+id/etQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Tulis pertanyaan di sini..."
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:lines="5"
+            android:maxLines="8"
+            android:scrollbars="vertical"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888888"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tombol Tambah Rumus -->
+        <Button
+            android:id="@+id/btnAddFormula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Tambah Rumus"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Pilihan A -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan A:"
+            android:textColor="@android:color/white" />
+        <EditText
+            android:id="@+id/etOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi opsi A"
+            android:textColor="#ffffff"
+            android:textColorHint="#888888" />
+
+        <!-- Pilihan B -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan B:"
+            android:textColor="@android:color/white" />
+        <EditText
+            android:id="@+id/etOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi opsi B"
+            android:textColor="#ffffff"
+            android:textColorHint="#888888" />
+
+        <!-- Pilihan C -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan C:"
+            android:textColor="@android:color/white" />
+        <EditText
+            android:id="@+id/etOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi opsi C"
+            android:textColor="#ffffff"
+            android:textColorHint="#888888" />
+
+        <!-- Pilihan D -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan D:"
+            android:textColor="@android:color/white" />
+        <EditText
+            android:id="@+id/etOptionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi opsi D"
+            android:textColor="#ffffff"
+            android:textColorHint="#888888"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Jawaban Benar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jawaban Benar (A/B/C/D):"
+            android:textColor="@android:color/white" />
+        <EditText
+            android:id="@+id/etAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan huruf A/B/C/D"
+            android:inputType="textCapCharacters"
+            android:maxLength="1"
+            android:textColor="#ffffff"
+            android:textColorHint="#888888"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Tombol Preview Soal -->
+        <Button
+            android:id="@+id/btnPreviewQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔎 Preview Soal"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 SIMPAN"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Tombol Lihat dan Edit Soal -->
+        <Button
+            android:id="@+id/btnViewQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔍 Lihat dan Edit Soal"
+            android:backgroundTint="#FFC107"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

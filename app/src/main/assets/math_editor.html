@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Math Editor</title>
+
+    <!-- TinyMCE (WYSIWYG Editor) -->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <!-- MathJax untuk render rumus -->
+    <script>
+        window.MathJax = {
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+          svg: { fontCache: 'global' }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+    <style>
+        body {
+          margin: 0;
+          background-color: #f3f3f3;
+          font-family: sans-serif;
+        }
+        #editor {
+          width: 100%;
+          height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+<textarea id="editor"></textarea>
+
+<script>
+    tinymce.init({
+      selector: '#editor',
+      height: window.innerHeight,
+      menubar: false,
+      plugins: 'codesample link lists image table preview',
+      toolbar: 'undo redo | bold italic subscript superscript | bullist numlist | equation mathjax | removeformat preview',
+      setup: function (editor) {
+        editor.ui.registry.addButton('equation', {
+          text: '∑ Rumus',
+          onAction: function () {
+            let formula = prompt("Masukkan rumus LaTeX (contoh: x^2 + \\frac{1}{2})");
+            if (formula) {
+              editor.insertContent('$$' + formula + '$$');
+            }
+          }
+        });
+      },
+      content_style: "body { font-size:16px; }"
+    });
+
+    // Ambil isi editor untuk dikirim ke Android
+    function getContent() {
+      return tinymce.activeEditor.getContent();
+    }
+
+    // Set isi editor dari Android
+    function setContent(html) {
+      tinymce.activeEditor.setContent(html);
+    }
+</script>
+</body>
+</html>

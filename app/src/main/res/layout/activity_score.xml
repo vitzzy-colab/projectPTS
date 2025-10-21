@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreActivity"
+    android:background="@drawable/background_7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/rounded_background"
+        android:orientation="vertical">
+
+        <!-- Text Materi -->
+        <TextView
+            android:id="@+id/txtMateri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Materi"
+            android:fontFamily="@font/pixelifysans"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <!-- Text Score -->
+        <TextView
+            android:id="@+id/txtTotScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/pixelifysans"
+            android:text="SCORE : ..."
+            android:textAlignment="center"
+            android:textColor="#FF4800"
+            android:textSize="40sp" />
+
+        <!-- ScrollView untuk konten dinamis -->
+        <ScrollView
+            android:id="@+id/scrlview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/scrlLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+    <!-- Tombol -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnKELUAR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="KELUAR"
+            android:backgroundTint="#FF4800"
+            android:fontFamily="@font/pixelifysans"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnULANGI"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ULANGI"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#FF4800"
+            android:fontFamily="@font/pixelifysans"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</RelativeLayout>

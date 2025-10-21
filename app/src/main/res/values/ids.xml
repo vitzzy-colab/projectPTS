@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtChooseMateri" type="id" />
+    <item name="btnMateri1" type="id" />
+    <item name="btnMateri2" type="id" />
+    <item name="btnMateri3" type="id" />
+    <item name="btnKatolik" type="id" />
+    <item name="txtchosemapel" type="id" />
+    <item name="btnIndonesia" type="id" />
+    <item name="btnIPA" type="id" />
+    <item name="btnMTK" type="id" />
+    <item name="btnPPKn" type="id" />
+    <item name="btnSB" type="id" />
+    <item name="btnPJOK" type="id" />
+    <item name="btnIPS" type="id" />
+    <item name="btnAgama" type="id" />
+    <item name="btnAgamaChose" type="id" />
+    <item name="btnIslam" type="id" />
+    <item name="btnKristen" type="id" />
+    <item name="txtchoseschool" type="id" />
+    <item name="btnElementary" type="id" />
+    <item name="gradeElementaryLayout" type="id" />
+    <item name="btnGrade4" type="id" />
+    <item name="btnGrade5" type="id" />
+    <item name="btnGrade6" type="id" />
+    <item name="btnJunior" type="id" />
+    <item name="gradeJuniorLayout" type="id" />
+    <item name="btnGrade7" type="id" />
+    <item name="btnGrade8" type="id" />
+    <item name="btnGrade9" type="id" />
+    <item name="btnSenior" type="id" />
+    <item name="gradeSeniorLayout" type="id" />
+    <item name="btnGrade10" type="id" />
+    <item name="btnGrade11" type="id" />
+    <item name="btnGrade12" type="id" />
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_3"
+    tools:context=".SignIn">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- Card untuk form -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:padding="20dp">
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editTextEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_retangle"
+            android:hint="Email"
+            android:textColorHint="@color/hintputih"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Password -->
+        <TextView
+            android:id="@+id/txtpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editTextPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/hintputih"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/radius_retangle"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Tombol Login -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:backgroundTint="@color/putihtransparant"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Tombol Google -->
+        <Button
+            android:id="@+id/buttonGoogleLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login dengan Google"
+            android:backgroundTint="@color/putihtransparant"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Link daftar -->
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun? Daftar"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

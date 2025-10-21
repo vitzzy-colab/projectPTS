@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollQuiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/showlevel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/level_1" />
+
+        <TextView
+            android:id="@+id/txtProgress"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soal 1 dari 10"
+            android:background="@drawable/rounded_background"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pertanyaan akan muncul di sini"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_transparant_hitam" />
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Jawaban A"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/hitamtransparant2"
+            android:fontFamily="@font/pixelifysans" />
+
+        <Button
+            android:id="@+id/btnB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jawaban B"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/hitamtransparant2"
+            android:fontFamily="@font/pixelifysans" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jawaban C"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/hitamtransparant2"
+            android:fontFamily="@font/pixelifysans" />
+
+        <Button
+            android:id="@+id/btnD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jawaban D"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/hitamtransparant2"
+            android:fontFamily="@font/pixelifysans" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+
+            <Button
+                android:id="@+id/btnKEMBALI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/hitamtransparant2"
+                android:fontFamily="@font/pixelifysans"
+                android:text="KEMBALI"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnSKIP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/hitamtransparant2"
+                android:fontFamily="@font/pixelifysans"
+                android:text="SKIP"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
